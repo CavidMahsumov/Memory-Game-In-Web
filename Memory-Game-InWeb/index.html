@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <audio id="mySound" src="countdown.wav"></audio>
+
+    <h1> 1 Min Timer </h1>
+    
+    <svg viewBox="0 0 42 42">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(220,220,220);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,240,245);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      
+      <circle r=20 cx=21 cy=21 fill="url(#grad1)" stroke="grey" stroke-width="2px" stroke-dasharray="126" stroke-linecap="round"></circle>
+      <text y="-15px" x="13px" fill="grey"></text>
+    </svg>
+
+  <div id="game"></div>
+  <script src="index.js"></script>
+</body>
+
+</html>
